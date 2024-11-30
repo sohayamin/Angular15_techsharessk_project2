@@ -1,0 +1,54 @@
+<!-- https://www.youtube.com/playlist?list=PLmY2oBouT85a3JEygTNITqgY6D-las6LP -->
+ <!-- <h5 class="text-center mt-5">Welcome</h5>
+ <router-outlet></router-outlet> -->
+
+ <div class="d-flex">
+  <div style="display: inline-block; width: 20%;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100" style="width: 280px;">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4">Sidebar</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <!-- <li class="nav-item">
+              <a [routerLink]="['/']" routerLinkActive="active"  class="nav-link text-white" >
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                Home
+              </a>
+            </li> -->
+            <!-- <li>
+              <a [routerLink]="['/loginm']" routerLinkActive="active"  class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/login',1]" routerLinkActive="active"  class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                Login
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/register']" routerLinkActive="active" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Register
+              </a>
+            </li> -->
+            <li>
+              <a [routerLink]="['/products']" routerLinkActive="active" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Products
+              </a>
+            </li>
+          </ul>
+          <hr>
+      </div>
+  </div>
+  <div style="display: inline-block; width: 80%;">
+      <router-outlet/>
+  </div>
+</div>
+<!-- <p>layout works!</p> -->
+<!-- <router-outlet/>  -->
+
