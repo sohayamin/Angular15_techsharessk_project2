@@ -3,14 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { SenderComponent } from './sender/sender.component';
+import { RecieverComponent } from './reciever/reciever.component';
 
 const routes: Routes = [
   // {
   //   path: '', redirectTo: '/login', pathMatch: 'full'
   // },
-  // {
-  //   path: 'login', loadChildren: ()=>import('./login/login.module').then(component=> component.LoginModule)
-  // },
+  {
+    path: 'login', component: LoginComponent //loadChildren: ()=>import('./login/login.module').then(component=> component.LoginModule)
+  },
   // {
   //   path: 'register', component: RegisterComponent
   // },
@@ -21,11 +24,18 @@ const routes: Routes = [
   //   path: '**', component: NotfoundComponent
   // }
 
-   {
-    path: '', redirectTo: '/products', pathMatch: 'full'
+  //  {
+  //   path: '', redirectTo: '/products', pathMatch: 'full'
+  // },
+  // {
+  //   path: 'products', loadChildren: ()=>import('./products/products.module').then(m=> m.ProductsModule)
+  // },
+
+  {
+    path: 'sender', component: SenderComponent
   },
   {
-    path: 'products', loadChildren: ()=>import('./products/products.module').then(m=> m.ProductsModule)
+    path: 'reciever', component: RecieverComponent
   },
  
 ];
